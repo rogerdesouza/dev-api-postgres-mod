@@ -2,9 +2,9 @@
   "name": "dev-api-postgres-mod",
   "version": "1.0.0",
   "description": "Exemplo de projeto em JS com Node e Postgres",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "start": "nodemon src/server.js"
   },
   "author": "rogerdesouza99@gmail.com",
   "license": "ISC",

@@ -36,7 +36,6 @@ export class App {
 
   getRoutes() {
     routes(this.app)
-    // routes(this.app, this.auth)
   }
 
   async dataBaseConn() {

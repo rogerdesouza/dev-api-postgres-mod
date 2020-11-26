@@ -12,7 +12,7 @@ const config = {
         logging: true
     },
     test: {
-        database: process.env.DB_NAME || 'mod',
+        database: process.env.DB_NAME || 'mod_test',
         username: process.env.DB_USER || 'postgres',
         password: process.env.DB_PASS || '123',
         host: process.env.DB_HOST || '0.0.0.0',
