@@ -1,4 +1,4 @@
-import { SequelizeConfig } from './config/database/sequelize.config'
+import DataBase from '../src/models/index'
 import routes from './routes/index'
 import express from 'express'
 import cors from 'cors'

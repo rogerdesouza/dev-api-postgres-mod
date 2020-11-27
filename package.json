@@ -4,10 +4,10 @@
   "description": "Exemplo de projeto em JS com Node e Postgres",
   "main": "src/server.js",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "dev": "nodemon src/server"
   },
   "author": "rogerdesouza99@gmail.com",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "nodemon": "^2.0.6",
     "sucrase": "^3.16.0"
