@@ -20,12 +20,7 @@ class DataBase {
         this.configuration = config[this.nodeEnv]
 
         // Inicializa conexao
-        this.connection = new Sequelize(
-            this.configuration.database,
-            this.configuration.username,
-            this.configuration.password,
-            this.configuration
-        )
+        this.connection = new Sequelize(this.configuration)
 
         // Percorre o vetor e acessa o método inicializador
         models.map(model => model.init(this.connection))

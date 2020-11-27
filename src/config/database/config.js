@@ -1,14 +1,13 @@
-import env from 'dotenv'
-env.config()
+require('dotenv').config()
 
-const config = {
+module.exports = {
     development: {
         database: process.env.DB_NAME || 'mod',
         username: process.env.DB_USER || 'postgres',
         password: process.env.DB_PASS || '123',
         host: process.env.DB_HOST || '0.0.0.0',
         port: process.env.DB_PORT || 5432,
-        dialect: 'postgres',
+        dialect: process.env.DB_DIALECT || 'postgres',
         logging: true
     },
     test: {
@@ -17,7 +16,7 @@ const config = {
         password: process.env.DB_PASS || '123',
         host: process.env.DB_HOST || '0.0.0.0',
         port: process.env.DB_PORT || 5432,
-        dialect: 'postgres',
+        dialect: process.env.DB_DIALECT || 'postgres',
         logging: true
     },
     production: {
@@ -26,9 +25,7 @@ const config = {
         password: process.env.DB_PASS,
         host: process.env.DB_HOST,
         port: process.env.DB_PORT,
-        dialect: 'postgres',
+        dialect: process.env.DB_DIALECT,
         logging: false
     }
 }
-
-export default config
